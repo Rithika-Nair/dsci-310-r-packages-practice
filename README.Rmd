@@ -79,4 +79,5 @@ library(regexcite)
 
 my_add(10)
 my_add(20, 30)
+my_add(10, NA)
 ```
