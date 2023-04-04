@@ -1,5 +1,6 @@
 #' Add 2 numerical parameters
 #'
+#'
 #' @param x the first number to add.
 #' @param y the second number to add which is 10 by default, unless mentioned.
 #'

@@ -30,6 +30,8 @@ devtools::install_github("Rithika-Nair/dsci-310-r-packages-practice")
 
 ## Usage
 
+### str_split_one
+
 A fairly common task when dealing with strings is the need to split a
 single string into many parts. This is what `base::strplit()` and
 `stringr::str_split()` do.
@@ -72,4 +74,22 @@ str_split_one(x, pattern = ",", n = 2)
 y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 #> [1] "192" "168" "0"   "1"
+```
+
+### my_add
+
+A fairly common task when dealing with numerical values is to sum them
+up. `regexcite::my_add()` adds up two numeric parameter inputted by the
+user. If only one numeric parameter is provided, the function will add
+it up with 10. If either of the parameters are NA, `my_add()` will
+return NA. If either of the parameters are strings, an error will be
+thrown.
+
+``` r
+library(regexcite)
+
+my_add(10)
+#> [1] 20
+my_add(20, 30)
+#> [1] 50
 ```
